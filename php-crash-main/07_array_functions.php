@@ -58,9 +58,9 @@ $newNumbers = array_map(function ($number) {
 }, $numbers);
 
 // Filter array
-$lessThan10 = array_filter($numbers, fn($number) => $number < 10);
+$lessThan10 = array_filter($numbers, fn ($number) => $number < 10);
 
 // Array Reduce
 // "carry" holds the return value of the previous iteration
-$sum = array_reduce($numbers, fn($carry, $number) => $carry + $number);
+$sum = array_reduce($numbers, fn ($carry, $number) => $carry + $number);
 var_dump($sum);

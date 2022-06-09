@@ -52,6 +52,29 @@ $add = function ($num1, $num2) {
 echo $add(5, 5);
 
 // Arrow functions
-$multiply = fn($num1, $num2) => $num1 * $num2;
+$multiply = fn ($num1, $num2) => $num1 * $num2;
 
 echo $multiply(5, 5);
+
+
+
+
+
+// My Attempt
+function registered_user($username)
+{
+  echo "<br> User $username has been registerd";
+}
+
+registered_user("Joey");
+
+//
+
+function add1($n1 = 2, $n2 = 2)
+{
+  return $n1 + $n2;
+}
+
+echo "<br>" . add1();
+
+//

@@ -95,3 +95,16 @@ switch ($favcolor) {
   default:
     echo 'Your favorite color is not red, blue, nor green!';
 }
+
+
+
+// My Attempt
+echo '<br>';
+$postss = [];
+if (!empty($posts[0])) {
+  echo 'yes';
+} else {
+  echo 'no';
+}
+echo '<br>';
+echo 'get fucked';
