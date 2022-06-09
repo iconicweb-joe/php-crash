@@ -3,7 +3,7 @@
 /* ------- Outputting Content ------- */
 
 // Echo - Output strings, numbers, html, etc
-echo 'Hello1';
+echo 'Hello';
 echo 123;
 echo '<h1>Hello</h1>';
 
