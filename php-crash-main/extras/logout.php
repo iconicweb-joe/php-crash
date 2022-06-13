@@ -3,4 +3,4 @@ session_start();
 
 // destroy the session
 session_destroy();
-header('Location: /php-crash/13_sessions.php');
+header('Location: /php-crash/php-crash-main/13_sessions.php');

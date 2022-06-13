@@ -20,29 +20,31 @@ if (isset($_POST['submit'])) {
     FILTER_SANITIZE_FULL_SPECIAL_CHARS
   );
 
-  if ($username == 'brad' && $password == 'password') {
+  if ($username == 'joe' && $password == 'password') {
     // Set Session variable
     $_SESSION['username'] = $username;
     // Redirect user to another page
-    header('Location: /php-crash/extras/dashboard.php');
+    header('Location: /php-crash/php-crash-main/extras/dashboard.php');
   } else {
     echo 'Incorrect username or password';
   }
 }
 ?>
 
-  <form action="<?php echo htmlspecialchars(
-    $_SERVER['PHP_SELF']
-  ); ?>" method="POST">
-    <div>
-      <label>Username: </label>
-      <input type="text" name="username">
-    </div>
-    <br>
-    <div>
-      <label>Password: </label>
-      <input type="password" name="password">
-    </div>
-    <br>
-    <input type="submit" name="submit" value="Submit">
-  </form>
+<form action="<?php echo htmlspecialchars(
+                $_SERVER['PHP_SELF']
+              ); ?>" method="POST">
+  <div>
+    <label>Username: </label>
+    <input type="text" name="username">
+  </div>
+  <br>
+  <div>
+    <label>Password: </label>
+    <input type="password" name="password">
+  </div>
+  <br>
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+<a href="/php-crash/php-crash-main/">Back to Home</a>
